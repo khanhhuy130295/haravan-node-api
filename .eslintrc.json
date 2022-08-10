@@ -1,0 +1,32 @@
+{
+	"extends": ["prettier"],
+	"plugins": ["prettier"],
+	"parserOptions": {
+		"ecmaVersion": 13,
+		"sourceType": "module",
+		"ecmaFeatures": {
+			"tsx": true,
+			"modules": true
+		}
+	},
+	"rules": {
+		"prettier/prettier": [
+			"warn",
+			{
+				"bracketSameLine": false
+			}
+		],
+		"no-var": "error",
+		"no-dupe-keys": "error",
+		"no-whitespace-before-property": "error",
+		"eqeqeq": [2, "always"],
+		"block-spacing": [2, "always"],
+		"comma-spacing": [
+			2,
+			{
+				"before": false,
+				"after": true
+			}
+		]
+	}
+}

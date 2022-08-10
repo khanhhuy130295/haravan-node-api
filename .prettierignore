@@ -1,0 +1,4 @@
+# .prettierignore file
+dist
+node_modules/
+.gitlab-ci.yml

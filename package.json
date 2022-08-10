@@ -1,0 +1,64 @@
+{
+  "name": "haravan-node-api",
+  "version": "1.0.0",
+  "description": "Haravan api typescript",
+  "main": "dist/index.ts",
+  "types": "dist/index.d.ts",
+  "repository": "ssh://git@gitlab.haravan.com:2222/haravan_app/apps-library/haravan-node-api.git",
+  "author": "huydhk",
+  "license": "MIT",
+  "publishConfig": {
+    "access": "public"
+  },
+  "keywords": [
+    "app",
+    "node",
+    "Haravan",
+    "Admin Api",
+    "rest",
+    "typescript"
+  ],
+  "scripts": {
+    "dev": "ts-node --project tsconfig.json src/index.ts",
+    "dev-test": " ts-node --project tsconfig.json  ./demo.ts",
+    "build": "tsc ",
+    "lint": "npx eslint --ext .tsx --ext .ts --fix ./",
+    "clean": "rimraf ./dist tsconfig.tsbuildinfo",
+    "style": "npx prettier --write **/*.ts",
+    "test": " jest --watch --detectOpenHandles",
+    "test:ci": "jest --ci"
+  },
+  "dependencies": {
+    "@tsconfig/node16": "^1.0.3",
+    "@types/node-fetch": "^2.5.7",
+    "axios": "^0.26.1",
+    "global": "^4.4.0",
+    "lodash": "^4.17.21",
+    "node-fetch": "^2.6.7",
+    "tsconfig-paths": "^4.0.0",
+    "tscpaths": "^0.0.9",
+    "tslib": "^2.4.0",
+    "uuid": "8.3.2"
+  },
+  "devDependencies": {
+    "@types/jest": "28.1.6",
+    "@types/node": "18.6.5",
+    "@types/uuid": "8.3.4",
+    "eslint": "8.21.0",
+    "eslint-config-prettier": "^8.5.0",
+    "eslint-plugin-import": "2.25.3",
+    "eslint-plugin-prettier": "^4.0.0",
+    "jest": "^27.5.1",
+    "prettier": "2.7.1",
+    "rimraf": "^3.0.2",
+    "ts-jest": "^27.1.3",
+    "typescript": "^4.7.4"
+  },
+  "resolutions": {
+    "node-fetch": "^2.6.7"
+  },
+  "files": [
+    "dist/*",
+    "!tsconfig.tsbuildinfo"
+  ]
+}

@@ -1,0 +1,15 @@
+{
+    "embeddedLanguageFormatting": "auto",
+    "htmlWhitespaceSensitivity": "css",
+    "printWidth": 150,
+    "proseWrap": "preserve",
+    "tabWidth": 2,
+    "trailingComma": "es5",
+    "useTabs": true,
+    "semi": true,
+    "singleQuote": false,
+    "endOfLine": "auto",
+    "jsxSingleQuote": false,
+    "bracketSameLine": false,
+    "arrowParens": "always"
+}
